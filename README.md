@@ -31,4 +31,23 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## docker build --pull --rm  -f "Dockerfile" -t docker-angular-app:latest "."
 
+## docker run --rm -d -p 80:80/tcp docker-angular-app:latest
+
+## docker tag docker-angular-app:latest codewithashish/dockerhub:docker-angular-app
+
+## docker push codewithashish/dockerhub:docker-angular-app
+
 ## "build": "node --max_old_space_size=16384 ./node_modules/@angular/cli/bin/ng build --progress=false --prod",
+
+
+# docker login
+<enter user name and password for Docker Hub Repository>
+
+$ docker tag first-image {docker-hub-username}/{default-repo-folder-name}:first-image
+
+$ docker push {docker-hub-username}/{default-repo-folder-name}:first-image
+e.g. I have public repository like codewithashish/docker-repo so commands would be:
+
+$ docker tag first-image codewithashish/docker-repo:first-image
+
+$ docker push codewithashish/docker-repo:first-image
