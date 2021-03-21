@@ -51,3 +51,12 @@ e.g. I have public repository like codewithashish/docker-repo so commands would 
 $ docker tag first-image codewithashish/docker-repo:first-image
 
 $ docker push codewithashish/docker-repo:first-image
+
+
+## docker build -t angular-docker-app .
+
+## docker run --name angular-docker-app -d -p 8088:80 angular-docker-app
+
+## docker tag angular-docker-app:latest codewithashish/angularcontainer:angular-docker-app
+
+## docker push codewithashish/angularcontainer:angular-docker-app
