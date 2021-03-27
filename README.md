@@ -52,24 +52,25 @@ $ docker tag first-image codewithashish/docker-repo:first-image
 
 $ docker push codewithashish/docker-repo:first-image
 
-## docker build -t angularmaps-docker .
+## docker build -t angulardockercontainer .
 
-## docker run --name angularmaps-docker -d -p 8088:80 angularmaps-docker
+## docker run --name angulardockercontainer -d -p 8088:80 angulardockercontainer
 
-## docker tag angularmaps-docker:latest codewithashish/angularmaps:angularmaps-docker
+## docker tag angulardockercontainer:latest codewithashish/angularrepo:angulardockercontainer
 
-## docker push codewithashish/angularmaps:angularmaps-docker
+## docker push codewithashish/angularrepo:angulardockercontainer
 
 
-## heroku create angularcontainer
+## heroku create angulardockercontainer
 
-## docker tag angularmaps-docker registry.heroku.com/angularcontainer/web
+## docker tag angularmaps-docker registry.heroku.com/angulardockercontainer/web
 
-## docker push registry.heroku.com/angularcontainer/web
+## docker push registry.heroku.com/angulardockercontainer/web
 
-## heroku container:push web --app angularcontainer
+## heroku container:push web --app angulardockercontainer
 
-## heroku container:release web --app=angularcontainer
+## heroku container:release web --app=angulardockercontainer
 
-## heroku container:release  web --app angularcontainer
+## heroku container:release  web --app angulardockercontainer
 
+## heroku logs --app angulardockercontainer
